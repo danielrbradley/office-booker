@@ -3,6 +3,7 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "jpoissonnier.vscode-styled-components",
-    "stylelint.vscode-stylelint"
+    "stylelint.vscode-stylelint",
+    "ms-vscode-remote.remote-containers"
   ]
 }
