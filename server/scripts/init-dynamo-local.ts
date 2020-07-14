@@ -4,7 +4,7 @@ createLocalTables(
   { deleteTablesFirst: true },
   {
     region: 'eu-west-1',
-    endpoint: 'http://localhost:8000',
+    endpoint: 'http://dynamodb:8000',
   }
 ).catch((e) => {
   console.error(e);

@@ -12,6 +12,8 @@ services:
     security_opt:
       - seccomp:unconfined
     command: /bin/sh -c "while sleep 1000; do :; done"
+    links:
+      - "dynamodb"
   dynamodb:
     image: amazon/dynamodb-local
     ports:
