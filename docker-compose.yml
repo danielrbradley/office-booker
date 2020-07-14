@@ -1,6 +1,17 @@
 version: '3'
 
 services:
+  dev:
+    image: mcr.microsoft.com/vscode/devcontainers/typescript-node:0-12
+    volumes:
+      - .:/workspace:cached
+    ports:
+      - '3000:3000'
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined
+    command: /bin/sh -c "while sleep 1000; do :; done"
   dynamodb:
     image: amazon/dynamodb-local
     ports:

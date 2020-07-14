@@ -1,11 +1,14 @@
 {
-  "image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:0-12",
-  "forwardPorts": [3000],
+  "name": "Office Booker",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "dev",
   "extensions": [
     "dbaeumer.vscode-eslint",
     "jpoissonnier.vscode-styled-components",
     "stylelint.vscode-stylelint",
     "esbenp.prettier-vscode",
     "cpylua.language-postcss"
-  ]
+  ],
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose"
 }
